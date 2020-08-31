@@ -1,0 +1,102 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\usetheme{CambridgeUS}
+
+%Information to be included in the title page:
+\title{Using millions of emoji occurrences to learn any-domain representations for detecting sentiment, emotion and sarcasm}
+\author{
+\textbf{COMP8240 Group D Project Proposal} \\
+\vspace{5mm} %5mm vertical space
+Ajit Kumar Chaudhary (Student id:- 46124942) \\
+Avinash Panday (Student id:- 46139001) \\
+Saroj Bogati (Student id:- 45842620) \\
+Moiz Ahmed Khan (Student id:- 45785031) \\
+}
+
+\institute{Macquaire University}
+\date{2020-09-01}
+
+
+
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+
+\frametitle{Overview}
+
+\begin{itemize}
+\item Motivation 
+\item Benchmark datasets 
+\item Method
+\item Demo
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Motivation}
+\begin{columns}
+\column{.5\textwidth}
+It is published at  \textbf{EMNLP} and globaly ranked 1st in \textbf{Sarcasm detection}. It uses 1246 million tweets containing about 64 common emojis on 8 benchmark dataset to predict sentiment, emotion, and sarcasm. 
+\column{.5\textwidth}
+\includegraphics[height = .40\textheight]{emoji.png}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Benchmark datasets}
+Code can be found in \url{https://paperswithcode.com/paper/using-millions-of-emoji-occurrences-to-learn}. It uses 8 benchmark datasets.
+\begin{itemize}
+\item \textbf{Olympic:} negative and high control, positive and high control, negative and low control, positive and high control.
+\item \textbf{PsychExp:} joy, fear, anger, sadness, disgust, shame, guilt
+\item \textbf{SCv1:} not sarcastic, sarcastic
+\item \textbf{SCv2-GEN:} not sarcastic, sarcastic
+\item \textbf{SE0714:} fear, joy, sadness
+\item \textbf{SS-Twitter:} negative, positive
+\item \textbf{SS-Youtube:} negative, positive
+\item \textbf{kaggle-insults:} neutral, insult
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Method}
+\begin{itemize}
+\item \textbf{Pretraining:-} The data is split into a training, validation and test set, where the validation and test set is randomly sampled in such a way that each emoji is equally represented.
+\item \textbf{Model Used:-} It uses LSTM, fast text classification, DeepMoji model to predict the accuracy of the classifiers.
+\item \textbf{Transfer learning:-} It uses approach in which 
+all layers in the model are frozen when fine-tuning on the target task except the last layer.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Method}
+\includegraphics[height = .40\textheight]{layers.png}
+\vspace{5mm} %5mm vertical space
+
+In the figure, each layer is fine tuned seperately. The layers covered in blue rectangle are frozen.
+\end{frame}
+
+
+
+
+\begin{frame}
+
+\frametitle{Demo}
+
+We will be reproducing the demo as per \url{https://deepmoji.mit.edu/}
+
+\includegraphics[height = .70\textheight]{deepemoji.png}
+
+\end{frame}
+
+\end{document}

@@ -1,5 +1,7 @@
 This is the replication of original work created using TorchMoji model [here](https://github.com/huggingface/torchMoji)
 
+Here in this report, we will explain about our reproducible research based on a paper that used millions of emoji occurrences to study any domain illustrations in order to detect sentiment, emotion and sarcasm underlying.
+
 # 😇 TorchMoji
 
 TorchMoji is a [pyTorch](http://pytorch.org/) implementation of the [DeepMoji](https://github.com/bfelbo/DeepMoji) model developped by Bjarke Felbo, Alan Mislove, Anders Søgaard, Iyad Rahwan and Sune Lehmann.

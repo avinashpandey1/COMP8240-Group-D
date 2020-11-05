@@ -10,7 +10,7 @@ Try the online demo of DeepMoji [http://deepmoji.mit.edu](http://deepmoji.mit.ed
 
 ## Overview
 * [Source Code replication.ipynb/] contains all the underlying code needed to successfully install the code.
-* [Score Prediction.ipynb/] contains short code snippets showing how to calculate scores.
+* [Score Prediction.ipynb/] contains short code snippets showing how to calculate the scores.
 * [Original dataset Evaluation.ipynb/] contains the accuracy score generated through benchmark dataset.
 * [New Dataset creation and evaluation.ipynb/]contains new data creation and evaluation
 

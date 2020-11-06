@@ -13,5 +13,13 @@ This model trained on 1.2 billion tweets with emojis to understand how language 
 * New Dataset creation and evaluation.ipynb contains new data creation and evaluation
 
 
-Please consider citing the [paper](https://arxiv.org/abs/1708.00524) of DeepMoji if you use the model or code (see below for citation).
+## Citation
+```
+@inproceedings{felbo2017,
+  title={Using millions of emoji occurrences to learn any-domain representations for detecting sentiment, emotion and sarcasm},
+  author={Felbo, Bjarke and Mislove, Alan and S{\o}gaard, Anders and Rahwan, Iyad and Lehmann, Sune},
+  booktitle={Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2017}
+}
+```
 
